@@ -1,38 +1,41 @@
 <template>
   <div class="landing-page primary screen-width">
     <div class="banner-section">
-      <div
-        class="
-          text-radial-gradient
-          width-782
-          text-dp-xll text-center
-          ma-auto
-          pt-16
-          px-10
-          font-weight-medium
-        "
-      >
-        Next-Gen IT Solution to create Revolutions
-      </div>
-      <div class="text-center text-dp-xs mt-4">
-        We provide Partnership, Solution and Development
-      </div>
-      <div class="text-center mt-12">
-        <v-btn color="secondary" class="text-capitalize border-radius-8"
-          >Let’s work together</v-btn
+      <div id="banner"></div>
+      <div class="banner-content screen-width">
+        <div
+          class="
+            text-radial-gradient
+            width-782
+            text-dp-xll text-center
+            ma-auto
+            pt-16
+            px-10
+            font-weight-medium
+          "
         >
-      </div>
-      <div class="banner-footer py-16">
-        <div class="text-center mt-4">
-          We are partnered with many well-known organizations around Vietnam
+          Next-Gen IT Solution to create Revolutions
         </div>
-        <div class="d-flex justify-center mt-7">
-          <img src="@/assets/google.png" />
-          <img class="ml-12" src="@/assets/amazon.png" />
-          <img class="ml-12" src="@/assets/tesla.png" />
-          <img class="ml-12" src="@/assets/standard.png" />
-          <img class="ml-12" src="@/assets/hsbc.png" />
-          <img class="ml-12" src="@/assets/microsoft.png" />
+        <div class="text-center text-dp-xs mt-4">
+          We provide Partnership, Solution and Development
+        </div>
+        <div class="text-center mt-12">
+          <v-btn color="secondary" class="text-capitalize border-radius-8"
+            >Let’s work together</v-btn
+          >
+        </div>
+        <div class="banner-footer py-16">
+          <div class="text-center mt-4">
+            We are partnered with many well-known organizations around Vietnam
+          </div>
+          <div class="d-flex justify-center mt-7">
+            <img src="@/assets/google.png" />
+            <img class="ml-12" src="@/assets/amazon.png" />
+            <img class="ml-12" src="@/assets/tesla.png" />
+            <img class="ml-12" src="@/assets/standard.png" />
+            <img class="ml-12" src="@/assets/hsbc.png" />
+            <img class="ml-12" src="@/assets/microsoft.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -391,12 +394,12 @@
     </div>
     <div class="footer-section">
       <div class="straight-line"></div>
-      <div class="container py-16">
+      <div class="pl-160 py-16">
         <div>
-        <Logo />
+          <Logo />
         </div>
       </div>
-      <div class="container footer-info">
+      <div class="footer-info">
         <v-row>
           <v-col>
             <div>Address: No 09, Hang Bun Alley, Hoan Kiem, Hanoi</div>
@@ -418,8 +421,8 @@
           </v-col>
         </v-row>
       </div>
-      <img class="screen-width" src="@/assets/Capylabs.png"/>
     </div>
+    <img class="screen-width pt-16" src="@/assets/Capylabs.png" />
   </div>
 </template>
 
@@ -452,10 +455,6 @@ export default {
   .banner-section {
     position: relative;
     height: calc(100vh - 56px);
-    background: url('@/assets/banner.png');
-    background-size: cover;
-    background-position-x: left;
-    background-position-y: bottom;
     .banner-footer {
       position: absolute;
       width: 100vw;
@@ -505,17 +504,24 @@ export default {
     }
   }
   .footer-section {
+    background: url('@/assets/footer-line.png');
+    background-size: 100vw 254px;
+    background-repeat: no-repeat;
+    height: 256px;
     .logo {
       width: 72px;
     }
     .footer-info {
+      padding-top: 1rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
     }
   }
   .straight-line {
     width: 100vw;
     height: 1px;
     background: #d9d9d9;
-    opacity: 0.7;
+    opacity: 0.2;
   }
   .section-slogan {
     .logo {
@@ -539,6 +545,9 @@ export default {
   }
   .pt-80 {
     padding-top: 5rem;
+  }
+  .pl-160 {
+    padding-left: 160px;
   }
 }
 </style>
