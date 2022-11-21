@@ -393,36 +393,40 @@
       </div>
     </div>
     <div class="footer-section">
-      <div class="straight-line"></div>
-      <div class="pl-160 py-16">
-        <div>
-          <Logo />
+      <div class="footer-content">
+        <div class="straight-line"></div>
+        <div class="pl-160 py-16">
+          <div>
+            <Logo />
+          </div>
+        </div>
+        <div class="footer-info">
+          <v-row>
+            <v-col>
+              <div>Address: No 09, Hang Bun Alley, Hoan Kiem, Hanoi</div>
+              <div>Contact: contact.capylabs@gmail.com</div>
+            </v-col>
+            <v-col class="text-right">
+              <div>
+                <router-link class="align-self-center ml-12" to="/"
+                  ><TwitterSvg
+                /></router-link>
+                <router-link class="align-self-center ml-4" to="/"
+                  ><LinkedinSvg
+                /></router-link>
+                <router-link class="align-self-center ml-4" to="/"
+                  ><FacebookSvg
+                /></router-link>
+              </div>
+              <div>Copyright © 2022 Capy Lab. All Rights Reserved</div>
+            </v-col>
+          </v-row>
         </div>
       </div>
-      <div class="footer-info">
-        <v-row>
-          <v-col>
-            <div>Address: No 09, Hang Bun Alley, Hoan Kiem, Hanoi</div>
-            <div>Contact: contact.capylabs@gmail.com</div>
-          </v-col>
-          <v-col class="text-right">
-            <div>
-              <router-link class="align-self-center ml-12" to="/"
-                ><TwitterSvg
-              /></router-link>
-              <router-link class="align-self-center ml-4" to="/"
-                ><LinkedinSvg
-              /></router-link>
-              <router-link class="align-self-center ml-4" to="/"
-                ><FacebookSvg
-              /></router-link>
-            </div>
-            <div>Copyright © 2022 Capy Lab. All Rights Reserved</div>
-          </v-col>
-        </v-row>
+      <div class="pt-16">
+        <img class="screen-width" src="@/assets/Capylabs.png" />
       </div>
     </div>
-    <img class="screen-width pt-16" src="@/assets/Capylabs.png" />
   </div>
 </template>
 
@@ -504,10 +508,16 @@ export default {
     }
   }
   .footer-section {
-    background: url('@/assets/footer-line.png');
-    background-size: 100vw 254px;
-    background-repeat: no-repeat;
-    height: 256px;
+    background: url('assets/background-footer-right.png'),
+    url('assets/background-footer-left.png');
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    .footer-content {
+      background: url('@/assets/footer-line.png');
+      background-size: 100vw 254px;
+      background-repeat: no-repeat;
+      height: 256px;
+    }
     .logo {
       width: 72px;
     }
@@ -516,6 +526,11 @@ export default {
       padding-left: 10rem;
       padding-right: 10rem;
     }
+  }
+  .background-color {
+    background-image: url('@/assets/background-footer-right.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
   }
   .straight-line {
     width: 100vw;
