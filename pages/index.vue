@@ -5,6 +5,7 @@
       <div class="banner-content screen-width">
         <div
           class="
+            display-transation from-top
             text-radial-gradient
             width-782
             text-dp-xll text-center
@@ -16,15 +17,15 @@
         >
           Next-Gen IT Solution to create Revolutions
         </div>
-        <div class="text-center text-dp-xs mt-4">
+        <div class="text-center text-dp-xs mt-4 display-transation from-bottom">
           We provide Partnership, Solution and Development
         </div>
         <div class="text-center mt-12">
-          <v-btn color="secondary" class="text-capitalize border-radius-8"
+          <v-btn color="secondary" class="text-capitalize border-radius-8 display-transation from-bottom"
             >Let’s work together</v-btn
           >
         </div>
-        <div class="banner-footer py-16">
+        <div class="banner-footer py-16 display-transation from-bottom">
           <div class="text-center mt-4">
             We are partnered with many well-known organizations around Vietnam
           </div>
@@ -42,7 +43,7 @@
     <div class="section-service">
       <div class="container">
         <v-row>
-          <v-col cols="12" md="7">
+          <v-col cols="12" md="7" class="display-transation from-bottom">
             <div class="text-radial-gradient text-dp-ll font-weight-medium">
               Our service
             </div>
@@ -56,7 +57,7 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto">
+            <div class="pa-4 service-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-1.png"
@@ -76,7 +77,7 @@
     <div class="section-service">
       <div class="container">
         <v-row>
-          <v-col cols="12" md="7">
+          <v-col cols="12" md="7" class="display-transation from-bottom">
             <div class="text-radial-gradient text-dp-ll font-weight-medium">
               Our service
             </div>
@@ -88,7 +89,7 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto">
+            <div class="pa-4 service-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-2.png"
@@ -108,7 +109,7 @@
     <div class="section-service">
       <div class="container">
         <v-row class="backgroud-right">
-          <v-col cols="12" md="7">
+          <v-col cols="12" md="7" class="display-transation from-bottom">
             <div class="text-radial-gradient text-dp-ll font-weight-medium">
               Our service
             </div>
@@ -122,7 +123,7 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto">
+            <div class="pa-4 service-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-3.png"
@@ -148,7 +149,7 @@
       </div>
       <v-row class="mt-16">
         <v-col cols="12" sm="6" md="3">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <img
               class="full-width border-radius-12"
               src="@/assets/work-1.png"
@@ -160,7 +161,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6" md="3">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <img
               class="full-width border-radius-12"
               src="@/assets/work-2.png"
@@ -172,7 +173,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6" md="3">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <img
               class="full-width border-radius-12"
               src="@/assets/work-3.png"
@@ -184,7 +185,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6" md="3">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <img
               class="full-width border-radius-12"
               src="@/assets/work-4.png"
@@ -201,7 +202,7 @@
       <div class="text-radial-gradient text-dp-ll font-weight-medium">
         Our Team
       </div>
-      <div class="text-dp-xs text--secondary mt-4">
+      <div class="text-dp-xs text--secondary mt-4 display-transation from-bottom">
         With more than 15 years of experience collectively in IT field and
         software development, Capy Labs is proud to be the new trailblazer to
         bring swift and efficient solution to our clients
@@ -210,7 +211,7 @@
         <div class="ma-auto"><v-icon>mdi-chevron-left</v-icon></div>
         <v-row class="mx-2">
           <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto">
+            <div class="pa-4 work-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/team_tung.png"
@@ -230,7 +231,7 @@
             </div>
           </v-col>
           <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto">
+            <div class="pa-4 work-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/team_tung.png"
@@ -250,7 +251,7 @@
             </div>
           </v-col>
           <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto">
+            <div class="pa-4 work-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/team_tung.png"
@@ -270,7 +271,7 @@
             </div>
           </v-col>
           <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto">
+            <div class="pa-4 work-card ma-auto display-transation from-bottom">
               <img
                 class="full-width border-radius-12"
                 src="@/assets/team_tung.png"
@@ -280,7 +281,7 @@
               </div>
               <div class="text-center text--secondary">CEO & Harem Chúa</div>
               <div class="d-flex justify-center mt-4">
-                <router-link class="align-self-center" to="/"
+                <router-link class="align-self-center mr-5" to="/"
                   ><TwitterSvg
                 /></router-link>
                 <router-link class="align-self-center" to="/"
@@ -302,7 +303,7 @@
       </div>
       <v-row class="mt-16">
         <v-col cols="12" sm="6">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <BitcoinSvg />
             <div class="text-center text-dp-xs font-weight-medium">
               Courageous
@@ -315,7 +316,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <BitcoinSvg />
             <div class="text-center text-dp-xs font-weight-medium">
               Customer-Oriented
@@ -327,7 +328,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <BitcoinSvg />
             <div class="text-center text-dp-xs font-weight-medium">
               Trust and Transparancy
@@ -340,7 +341,7 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6">
-          <div class="pa-4 work-card ma-auto">
+          <div class="pa-4 work-card ma-auto display-transation from-bottom">
             <BitcoinSvg />
             <div class="text-center text-dp-xs font-weight-medium">
               Craftmanship
@@ -357,31 +358,31 @@
     <div class="container pr-0">
       <v-row>
         <v-col cols="6" xs="12" class="align-self-center">
-          <div class="text-dp-lg font-weight-medium">Join us now!</div>
-          <div class="text-dp-xs text--secondary mt-6">
+          <div class="text-dp-lg font-weight-medium display-transation from-bottom">Join us now!</div>
+          <div class="text-dp-xs text--secondary mt-6 display-transation from-bottom">
             Team up with us to forge your path and craft unforgettable
             experiences together
           </div>
           <div class="mt-6">
-            <v-btn color="secondary text-capitalize border-radius-8"
+            <v-btn color="secondary text-capitalize border-radius-8 display-transation from-bottom"
               >Explore career</v-btn
             >
           </div>
         </v-col>
         <v-col cols="6" xs="12">
-          <img class="full-width" src="@/assets/join-us.png" />
+          <img class="full-width display-transation from-bottom" src="@/assets/join-us.png" />
         </v-col>
       </v-row>
     </div>
     <div class="container section-slogan justify-center py-108">
-      <div class="logo ma-auto">
+      <div class="logo ma-auto display-transation from-bottom">
         <Logo />
       </div>
-      <div class="text-dp-lg font-weight-medium text-center">
+      <div class="text-dp-lg font-weight-medium text-center display-transation from-bottom">
         We are the future.<br />
         Bring your ideas to life now.
       </div>
-      <div class="d-flex justify-center mt-12">
+      <div class="d-flex justify-center mt-12 display-transation from-bottom">
         <v-btn outlined color="secondary" class="border-radius-8 mr-6"
           ><span class="text-capitalize white--text"
             >Visit our Discord</span
@@ -396,11 +397,11 @@
       <div class="footer-content">
         <div class="straight-line"></div>
         <div class="pl-160 py-16">
-          <div>
+          <div class="display-transation from-bottom">
             <Logo />
           </div>
         </div>
-        <div class="footer-info">
+        <div class="footer-info display-transation from-bottom">
           <v-row>
             <v-col>
               <div>Address: No 09, Hang Bun Alley, Hoan Kiem, Hanoi</div>

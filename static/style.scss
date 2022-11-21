@@ -6,6 +6,27 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/* animation */
+.display-transation {
+  transition: transform 0.8s ease;
+}
+.from-bottom {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.from-bottom.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.from-top {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.from-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* animation end */
 .banner-section {
   position: relative;
 }
