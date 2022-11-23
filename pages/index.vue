@@ -5,7 +5,8 @@
       <div class="banner-content screen-width">
         <div
           class="
-            display-transation from-top
+            display-transation
+            from-top
             text-radial-gradient
             width-782
             text-dp-xll text-center
@@ -21,7 +22,14 @@
           We provide Partnership, Solution and Development
         </div>
         <div class="text-center mt-12">
-          <v-btn color="secondary" class="text-capitalize border-radius-8 display-transation from-bottom"
+          <v-btn
+            color="secondary"
+            class="
+              text-capitalize
+              border-radius-8
+              display-transation
+              from-bottom
+            "
             >Let’s work together</v-btn
           >
         </div>
@@ -30,12 +38,12 @@
             We are partnered with many well-known organizations around Vietnam
           </div>
           <div class="d-flex justify-center mt-7">
-            <img src="@/assets/google.png" />
-            <img class="ml-12" src="@/assets/amazon.png" />
-            <img class="ml-12" src="@/assets/tesla.png" />
-            <img class="ml-12" src="@/assets/standard.png" />
-            <img class="ml-12" src="@/assets/hsbc.png" />
-            <img class="ml-12" src="@/assets/microsoft.png" />
+            <img loading="lazy" src="@/assets/google.png" />
+            <img loading="lazy" class="ml-12" src="@/assets/amazon.png" />
+            <img loading="lazy" class="ml-12" src="@/assets/tesla.png" />
+            <img loading="lazy" class="ml-12" src="@/assets/standard.png" />
+            <img loading="lazy" class="ml-12" src="@/assets/hsbc.png" />
+            <img loading="lazy" class="ml-12" src="@/assets/microsoft.png" />
           </div>
         </div>
       </div>
@@ -57,7 +65,9 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto display-transation from-bottom">
+            <div
+              class="pa-4 service-card ma-auto display-transation from-bottom"
+            >
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-1.png"
@@ -89,7 +99,9 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto display-transation from-bottom">
+            <div
+              class="pa-4 service-card ma-auto display-transation from-bottom"
+            >
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-2.png"
@@ -123,7 +135,9 @@
             </div>
           </v-col>
           <v-col cols="12" md="5">
-            <div class="pa-4 service-card ma-auto display-transation from-bottom">
+            <div
+              class="pa-4 service-card ma-auto display-transation from-bottom"
+            >
               <img
                 class="full-width border-radius-12"
                 src="@/assets/service-3.png"
@@ -198,100 +212,61 @@
         </v-col>
       </v-row>
     </div>
-    <div class="container text-center py-128">
+    <div class="container text-center px-10 py-128">
       <div class="text-radial-gradient text-dp-ll font-weight-medium">
         Our Team
       </div>
-      <div class="text-dp-xs text--secondary mt-4 display-transation from-bottom">
+      <div
+        class="text-dp-xs text--secondary mt-4 display-transation from-bottom"
+      >
         With more than 15 years of experience collectively in IT field and
         software development, Capy Labs is proud to be the new trailblazer to
         bring swift and efficient solution to our clients
       </div>
       <div class="d-flex mt-16">
-        <div class="ma-auto"><v-icon>mdi-chevron-left</v-icon></div>
-        <v-row class="mx-2">
-          <v-col cols="12" sm="6" md="3">
+        <div class="ma-auto">
+          <v-icon @click="preSlide()">mdi-chevron-left</v-icon>
+        </div>
+        <div class="d-flex flex-row mx-2">
+          <div
+            class="slide px-4"
+            :class="item.class"
+            v-for="(item, index) in teamMemberDisplay"
+            :key="index"
+          >
             <div class="pa-4 work-card ma-auto display-transation from-bottom">
               <img
-                class="full-width border-radius-12"
+                loading="lazy"
                 src="@/assets/team_tung.png"
+                class="full-width border-radius-12"
               />
               <div class="text-center text-dp-xs font-weight-medium">
-                Johny Tung Dam
+                {{ item.name }}
               </div>
-              <div class="text-center text--secondary">CEO & Harem Chúa</div>
+              <div class="text-center text--secondary">{{ item.position }}</div>
               <div class="d-flex justify-center mt-4">
-                <router-link class="align-self-center" to="/"
+                <router-link class="align-self-center mr-2" :to="item.twitter"
                   ><TwitterSvg
                 /></router-link>
-                <router-link class="align-self-center" to="/"
+                <router-link class="align-self-center" :to="item.linkedin"
                   ><LinkedinSvg
                 /></router-link>
               </div>
             </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto display-transation from-bottom">
-              <img
-                class="full-width border-radius-12"
-                src="@/assets/team_tung.png"
-              />
-              <div class="text-center text-dp-xs font-weight-medium">
-                Johny Tung Dam
-              </div>
-              <div class="text-center text--secondary">CEO & Harem Chúa</div>
-              <div class="d-flex justify-center mt-4">
-                <router-link class="align-self-center" to="/"
-                  ><TwitterSvg
-                /></router-link>
-                <router-link class="align-self-center" to="/"
-                  ><LinkedinSvg
-                /></router-link>
-              </div>
-            </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto display-transation from-bottom">
-              <img
-                class="full-width border-radius-12"
-                src="@/assets/team_tung.png"
-              />
-              <div class="text-center text-dp-xs font-weight-medium">
-                Johny Tung Dam
-              </div>
-              <div class="text-center text--secondary">CEO & Harem Chúa</div>
-              <div class="d-flex justify-center mt-4">
-                <router-link class="align-self-center" to="/"
-                  ><TwitterSvg
-                /></router-link>
-                <router-link class="align-self-center" to="/"
-                  ><LinkedinSvg
-                /></router-link>
-              </div>
-            </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-4 work-card ma-auto display-transation from-bottom">
-              <img
-                class="full-width border-radius-12"
-                src="@/assets/team_tung.png"
-              />
-              <div class="text-center text-dp-xs font-weight-medium">
-                Johny Tung Dam
-              </div>
-              <div class="text-center text--secondary">CEO & Harem Chúa</div>
-              <div class="d-flex justify-center mt-4">
-                <router-link class="align-self-center mr-5" to="/"
-                  ><TwitterSvg
-                /></router-link>
-                <router-link class="align-self-center" to="/"
-                  ><LinkedinSvg
-                /></router-link>
-              </div>
-            </div>
-          </v-col>
-        </v-row>
-        <div class="ma-auto"><v-icon>mdi-chevron-right</v-icon></div>
+          </div>
+        </div>
+        <div class="ma-auto">
+          <v-icon @click="nextSlide()">mdi-chevron-right</v-icon>
+        </div>
+      </div>
+      <div class="pt-16 d-flex justify-center">
+        <div
+          v-for="n in teamMember.length - slideNumber + 1"
+          :key="n"
+          class="mx-1"
+        >
+          <div class="slideNav" :class="{ active: n === index + 1 }"></div>
+        </div>
       </div>
     </div>
     <div class="container text-center px-140 py-128">
@@ -358,19 +333,34 @@
     <div class="container pr-0">
       <v-row>
         <v-col cols="6" xs="12" class="align-self-center">
-          <div class="text-dp-lg font-weight-medium display-transation from-bottom">Join us now!</div>
-          <div class="text-dp-xs text--secondary mt-6 display-transation from-bottom">
+          <div
+            class="text-dp-lg font-weight-medium display-transation from-bottom"
+          >
+            Join us now!
+          </div>
+          <div
+            class="
+              text-dp-xs text--secondary
+              mt-6
+              display-transation
+              from-bottom
+            "
+          >
             Team up with us to forge your path and craft unforgettable
             experiences together
           </div>
           <div class="mt-6">
-            <v-btn color="secondary text-capitalize border-radius-8 display-transation from-bottom"
+            <v-btn
+              color="secondary text-capitalize border-radius-8 display-transation from-bottom"
               >Explore career</v-btn
             >
           </div>
         </v-col>
         <v-col cols="6" xs="12">
-          <img class="full-width display-transation from-bottom" src="@/assets/join-us.png" />
+          <img
+            class="full-width display-transation from-bottom"
+            src="@/assets/join-us.png"
+          />
         </v-col>
       </v-row>
     </div>
@@ -378,7 +368,15 @@
       <div class="logo ma-auto display-transation from-bottom">
         <Logo />
       </div>
-      <div class="text-dp-lg font-weight-medium text-center display-transation from-bottom">
+      <div
+        class="
+          text-dp-lg
+          font-weight-medium
+          text-center
+          display-transation
+          from-bottom
+        "
+      >
         We are the future.<br />
         Bring your ideas to life now.
       </div>
@@ -425,7 +423,7 @@
         </div>
       </div>
       <div class="pt-16">
-        <img class="screen-width" src="@/assets/Capylabs.png" />
+        <img loading="lazy" class="screen-width" src="@/assets/Capylabs.png" />
       </div>
     </div>
   </div>
@@ -446,6 +444,122 @@ export default {
     LinkedinSvg,
     BitcoinSvg,
     Logo,
+  },
+  data() {
+    return {
+      index: 0,
+      slideNumber: 4,
+      screenWidth: 0,
+      teamMember: [
+        {
+          name: 'Johny Tung Dam 1',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 2',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 3',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 4',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 5',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 6',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 7',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+        {
+          name: 'Johny Tung Dam 8',
+          position: 'CEO & Harem Chúa',
+          avatar: 'team_tung.png',
+          linkedin: '',
+          twitter: '',
+        },
+      ],
+      teamMemberDisplay: [],
+    }
+  },
+  beforeDestroy: function () {
+    window.removeEventListener('resize', this.calculateWindowWidth)
+  },
+  mounted() {
+    window.addEventListener('resize', this.calculateWindowWidth);
+    const seconds = 10
+    // 👇️ call function every 3 seconds
+    setInterval(() => {
+      this.nextSlide()
+    }, seconds * 1000)
+  },
+  methods: {
+    nextSlide() {
+      if (this.index == this.teamMember.length - this.slideNumber) {
+        this.index = 0
+      } else {
+        this.index = this.index + 1
+      }
+      this.teamMemberDisplay = this.teamMember.slice(
+        this.index,
+        this.index + this.slideNumber
+      )
+    },
+    preSlide() {
+      if (this.index == 0) {
+        this.index = this.teamMember.length - this.slideNumber
+      } else {
+        this.index = this.index - 1
+      }
+
+      this.teamMemberDisplay = this.teamMember.slice(
+        this.index,
+        this.index + this.slideNumber
+      )
+    },
+    calculateWindowWidth(e) {
+      this.screenWidth = window.innerWidth
+      console.log(this.screenWidth)
+      if (this.screenWidth < 600) {
+        this.slideNumber = 1
+      } else if (this.screenWidth < 960) {
+        this.slideNumber = 2
+      } else if (this.screenWidth < 1264) {
+        this.slideNumber = 3
+      } else {
+        this.slideNumber = 4
+      }
+      this.teamMemberDisplay = this.teamMember.slice(0, this.slideNumber)
+    },
   },
 }
 </script>
@@ -508,9 +622,19 @@ export default {
       border-radius: 24px;
     }
   }
+  .slideNav {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    &.active {
+      width: 64px;
+      background: #4b72cc;
+    }
+  }
   .footer-section {
     background: url('assets/background-footer-right.png'),
-    url('assets/background-footer-left.png');
+      url('assets/background-footer-left.png');
     background-position: right bottom, left top;
     background-repeat: no-repeat, no-repeat;
     .footer-content {
@@ -543,6 +667,10 @@ export default {
     .logo {
       width: 144px;
     }
+  }
+  .w-8 {
+    width: 8px;
+    height: 8px;
   }
   .width-782 {
     width: 782px;

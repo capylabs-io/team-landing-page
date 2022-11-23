@@ -3,7 +3,7 @@ import {OrbitControls} from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/
 
 const banner = document.getElementById("banner");
 console.clear();
-innerHeight = innerHeight -56;
+innerHeight = innerHeight - 56;
 let scene = new THREE.Scene();
 scene.background = new THREE.Color(0x011025);
 let camera = new THREE.PerspectiveCamera(90, innerWidth / innerHeight, 1, 200);
@@ -84,7 +84,7 @@ let m = new THREE.PointsMaterial({
         transformed += vec3(cos(moveS) * sin(moveT), cos(moveT), sin(moveS) * sin(moveT)) * shift.a;
       `
     );
-    console.log(shader.vertexShader);
+    // console.log(shader.vertexShader);
     shader.fragmentShader = `
       varying vec3 vColor;
       ${shader.fragmentShader}
@@ -98,7 +98,7 @@ let m = new THREE.PointsMaterial({
       `vec4 diffuseColor = vec4( diffuse, opacity );`,
       `vec4 diffuseColor = vec4( vColor, smoothstep(0.5, 0.2, d) * 0.5 + 0.5 );`
     );
-    console.log(shader.fragmentShader);
+    // console.log(shader.fragmentShader);
   }
 });
 let p = new THREE.Points(g, m);
