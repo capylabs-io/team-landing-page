@@ -16,7 +16,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: '/three.js', type: "module" },
       { src: '/js.js', type: "module" },
     ]
   },
