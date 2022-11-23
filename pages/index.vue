@@ -1,7 +1,7 @@
 <template>
   <div class="landing-page primary screen-width">
     <div class="banner-section">
-      <div id="banner"></div>
+      <div id="banner" class="banner"></div>
       <div class="banner-content screen-width">
         <div
           class="

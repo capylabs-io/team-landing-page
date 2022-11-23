@@ -2,7 +2,7 @@ import * as THREE from "https://cdn.skypack.dev/three@0.136.0";
 import {OrbitControls} from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls";
 
 const banner = document.getElementById("banner");
-console.clear();
+// console.clear();
 innerHeight = innerHeight - 56;
 let scene = new THREE.Scene();
 scene.background = new THREE.Color(0x011025);
@@ -10,7 +10,7 @@ let camera = new THREE.PerspectiveCamera(90, innerWidth / innerHeight, 1, 200);
 camera.position.set(0, 4, 25);
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(innerWidth, innerHeight);
-banner.appendChild(renderer.domElement);
+document.getElementsByClassName("banner")[0].appendChild(renderer.domElement);
 window.addEventListener("resize", event => {
   camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
