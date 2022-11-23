@@ -21,7 +21,7 @@ window.onload = (event) => {
     Array.from(tranactionItems).forEach((item) => {
       let itemTop = item.getBoundingClientRect().top;
       let itemBottom = item.getBoundingClientRect().bottom;
-      if (itemTop <= triggerBottom && itemBottom > 0) {
+      if (itemTop < triggerBottom && itemBottom > -10) {
         item.classList.add("show");
       } else {
         item.classList.remove("show");
