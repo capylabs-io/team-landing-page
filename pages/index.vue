@@ -5,14 +5,13 @@
       <div class="banner-content screen-width">
         <div
           class="
+            banner-title
             display-transation
             from-top
             text-radial-gradient
-            width-782
-            text-dp-xll text-center
+            text-center
             ma-auto
             pt-16
-            px-10
             font-weight-medium
           "
         >
@@ -37,13 +36,13 @@
           <div class="text-center mt-4">
             We are partnered with many well-known organizations around Vietnam
           </div>
-          <div class="d-flex justify-center mt-7">
-            <img loading="lazy" src="@/assets/google.png" />
-            <img loading="lazy" class="ml-12" src="@/assets/amazon.png" />
-            <img loading="lazy" class="ml-12" src="@/assets/tesla.png" />
-            <img loading="lazy" class="ml-12" src="@/assets/standard.png" />
-            <img loading="lazy" class="ml-12" src="@/assets/hsbc.png" />
-            <img loading="lazy" class="ml-12" src="@/assets/microsoft.png" />
+          <div class="d-flex flex-wrap justify-center mt-7">
+            <img loading="lazy" class="mx-5" src="@/assets/google.png" />
+            <img loading="lazy" class="mx-5" src="@/assets/amazon.png" />
+            <img loading="lazy" class="mx-5" src="@/assets/tesla.png" />
+            <img loading="lazy" class="mx-5" src="@/assets/standard.png" />
+            <img loading="lazy" class="mx-5" src="@/assets/hsbc.png" />
+            <img loading="lazy" class="mx-5" src="@/assets/microsoft.png" />
           </div>
         </div>
       </div>
@@ -332,7 +331,7 @@
     </div>
     <div class="container pr-0">
       <v-row>
-        <v-col cols="6" xs="12" class="align-self-center">
+        <v-col cols="12" md="6" class="align-self-center">
           <div
             class="text-dp-lg font-weight-medium display-transation from-bottom"
           >
@@ -356,7 +355,7 @@
             >
           </div>
         </v-col>
-        <v-col cols="6" xs="12">
+        <v-col cols="12" md="6">
           <img
             class="full-width display-transation from-bottom"
             src="@/assets/join-us.png"
@@ -515,6 +514,7 @@ export default {
     window.removeEventListener('resize', this.calculateWindowWidth)
   },
   mounted() {
+    this.calculateWindowWidth();
     window.addEventListener('resize', this.calculateWindowWidth);
     const seconds = 10
     // 👇️ call function every 3 seconds
@@ -574,12 +574,28 @@ export default {
   .banner-section {
     position: relative;
     height: calc(100vh - 56px);
+    .banner-title {
+      max-width: 1440px;
+      padding: 0 7.5rem;
+      font-size: 80px;
+      line-height: 80px;
+    }
+    @media screen and (max-width: 900px) {
+    .banner-title {
+      font-size: 48px;
+      line-height: 64px;
+      padding: 0 2rem;
+    }
+    .text-dp-xs {
+      font-size: 18px !important;
+      line-height: 28px !important;
+    }
+  }
     .banner-footer {
       position: absolute;
       width: 100vw;
       left: 0;
       bottom: 0px;
-      height: 248px;
       background: linear-gradient(
         180deg,
         rgba(1, 16, 37, 0) 0%,
@@ -620,6 +636,10 @@ export default {
         rgba(9, 10, 31, 0.5) 100%
       );
       border-radius: 24px;
+    }
+    @media screen and (max-width: 900px) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
   .slideNav {
@@ -672,9 +692,6 @@ export default {
     width: 8px;
     height: 8px;
   }
-  .width-782 {
-    width: 782px;
-  }
   .px-140 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
@@ -692,6 +709,12 @@ export default {
   }
   .pl-160 {
     padding-left: 160px;
+  }
+  @media screen and (max-width: 900px) {
+    .px-140 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 }
 </style>
